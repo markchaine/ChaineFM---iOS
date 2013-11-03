@@ -23,6 +23,16 @@
 {
     [super viewDidLoad];
     
+    if (![@"1" isEqualToString:[[NSUserDefaults standardUserDefaults]
+                                objectForKey:@"ChaineFirstLaunch"]]) {
+        [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"ChaineFirstLaunch"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+//This is first launch
+        
+    }
+    
+    
   
     {
     NSDate *now = [NSDate date];
@@ -32,11 +42,11 @@
     
     NSInteger hour = [components hour];
     if (hour == 01 || hour == 17) { // covers midnight - midday
-        label.text = @"Hi There!";
+        label.text = @"Welcome!";
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont fontWithName:@"SignikaNegative-Bold" size:22];
     } else { // If it's after 12pm then say Good Afternoon!
-        label.text = @"Hey!";
+        label.text = @"Hello and Welcome!";
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont fontWithName:@"SignikaNegative-Bold" size:22];
         
@@ -46,6 +56,8 @@
    
     }
 
+
+    
     
     PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
     [query getObjectInBackgroundWithId:@"DmZc3aZLLA" block:^(PFObject *welcomeText, NSError *error)
@@ -60,6 +72,13 @@
             hometext.numberOfLines = 0;
             hometext.text = [welcomeText objectForKey:@"TextValue"];
             hometext.font = [UIFont fontWithName:@"SignikaNegative-Regular" size:14];
+        
+        PFFile *imageFile = [welcomeText objectForKey:@"image"];
+        [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+            if (!error) {
+                yourImage.image = [UIImage imageWithData:data];
+            }
+        }];
        }];
         // The InBackground methods are asynchronous, so any code after this will run
         // immediately.  Any code that depends on the query result should be moved
@@ -69,8 +88,9 @@
 
     // Display who is on air
     }
-    
-    
+
+
+ 
 
 
 - (void)didReceiveMemoryWarning

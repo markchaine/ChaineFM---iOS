@@ -33,7 +33,7 @@
     
     _titleLabel.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
     
-    NSString *address = @"http://www.phpform.org/formbuilder/view.php?id=qpvdc7rie8oeecn8ec925ocen0";
+    NSString *address = @"http://jam96.user.srcf.net/contact2";
     
     
     // Build the url and loadRequest

@@ -26,59 +26,34 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k5Y-Na-nXm">
-                                <rect key="frame" x="42" y="109" width="236" height="34"/>
+                                <rect key="frame" x="42" y="102" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refreshing Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Iu-vR-ii4">
-                                <rect key="frame" x="33" y="252" width="256" height="160"/>
+                                <rect key="frame" x="32" y="316" width="256" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33225935218978103" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="00e-P3-vbY">
-                                <rect key="frame" x="141" y="438" width="39" height="37"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bUa-Pp-b7o" userLabel="Featured Image">
+                                <rect key="frame" x="20" y="138" width="280" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.54901963472366333" blue="0.63921570777893066" alpha="1" colorSpace="deviceRGB"/>
-                            </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe Gesture.png" id="bUa-Pp-b7o">
-                                <rect key="frame" x="108" y="150" width="104" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OpC-nI-ZTU">
-                                <rect key="frame" x="258" y="440" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CBP-pA-p2m">
-                                <rect key="frame" x="33" y="438" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Arrow2.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homecontain.png" id="Vl7-ZA-WMB">
-                                <rect key="frame" x="34" y="418" width="262" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="u1e-5L-l1D"/>
                     <connections>
-                        <outlet property="FirstImage" destination="bUa-Pp-b7o" id="fbJ-JP-qeY"/>
                         <outlet property="hometext" destination="2Iu-vR-ii4" id="Y8T-BL-xPm"/>
                         <outlet property="label" destination="k5Y-Na-nXm" id="5ls-s8-Qdd"/>
+                        <outlet property="yourImage" destination="bUa-Pp-b7o" id="SZt-h6-QnB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="BLO-f8-K0G"/>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
@@ -493,13 +468,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow.png" width="53" height="53"/>
-        <image name="Arrow2.png" width="53" height="53"/>
-        <image name="Swipe Gesture.png" width="228" height="255"/>
         <image name="background.png" width="640" height="910"/>
         <image name="bottombar.png" width="637" height="70"/>
         <image name="home-content.png" width="571" height="833"/>
-        <image name="homecontain.png" width="550" height="117"/>
         <image name="pause.png" width="500" height="500"/>
         <image name="play.png" width="60" height="67"/>
         <image name="playerplaceholder.png" width="632" height="390"/>

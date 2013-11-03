@@ -10,9 +10,12 @@
 
 @interface ChaineFMFirstViewController : UIViewController
 {
+
+
+IBOutlet UIImageView *yourImage;
 IBOutlet UITextField *label;
 IBOutlet UILabel *hometext;
-IBOutlet UIImageView *FirstImage;
+
 }
 
 @end

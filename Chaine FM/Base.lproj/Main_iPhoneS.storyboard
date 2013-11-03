@@ -26,55 +26,31 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k5Y-Na-nXm">
-                                <rect key="frame" x="42" y="102" width="236" height="34"/>
+                                <rect key="frame" x="42" y="91" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refreshing Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Iu-vR-ii4">
-                                <rect key="frame" x="32" y="224" width="256" height="131"/>
+                                <rect key="frame" x="32" y="283" width="256" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33225935218978103" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="00e-P3-vbY">
-                                <rect key="frame" x="50" y="358" width="220" height="37"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xmi-a3-h04" userLabel="Featured Image">
+                                <rect key="frame" x="20" y="125" width="280" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.54901963472366333" blue="0.63921570777893066" alpha="1" colorSpace="deviceRGB"/>
-                            </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe Gesture.png" id="bUa-Pp-b7o">
-                                <rect key="frame" x="129" y="151" width="72" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OpC-nI-ZTU">
-                                <rect key="frame" x="253" y="363" width="25" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Arrow.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CBP-pA-p2m">
-                                <rect key="frame" x="42" y="363" width="25" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Arrow2.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homecontain.png" id="Vl7-ZA-WMB">
-                                <rect key="frame" x="29" y="358" width="262" height="35"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="u1e-5L-l1D"/>
                     <connections>
-                        <outlet property="FirstImage" destination="bUa-Pp-b7o" id="fbJ-JP-qeY"/>
                         <outlet property="hometext" destination="2Iu-vR-ii4" id="Y8T-BL-xPm"/>
                         <outlet property="label" destination="k5Y-Na-nXm" id="5ls-s8-Qdd"/>
+                        <outlet property="yourImage" destination="xmi-a3-h04" id="Hzh-1C-enG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
@@ -134,7 +110,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" id="usX-V7-TgJ">
-                                <rect key="frame" x="20" y="120" width="280" height="263"/>
+                                <rect key="frame" x="26" y="120" width="267" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -485,13 +461,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow.png" width="53" height="53"/>
-        <image name="Arrow2.png" width="53" height="53"/>
-        <image name="Swipe Gesture.png" width="228" height="255"/>
         <image name="background.png" width="640" height="910"/>
         <image name="bottombar.png" width="637" height="70"/>
         <image name="home-content.png" width="571" height="833"/>
-        <image name="homecontain.png" width="550" height="117"/>
         <image name="pause.png" width="500" height="500"/>
         <image name="play.png" width="60" height="67"/>
         <image name="playerplaceholder.png" width="632" height="390"/>
