@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ChaineFMFirstViewController : UIViewController
+{
+IBOutlet UITextField *label;
+IBOutlet UILabel *hometext;
+IBOutlet UIImageView *FirstImage;
+}
 
 @end
