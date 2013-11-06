@@ -322,6 +322,8 @@ void MyPacketsProc(void *							inClientData,
 			MyEnqueueBuffer(myData);
 			WaitForFreeBuffer(myData);
 		}
+        
+        
 		
 		// copy data to the audio queue buffer
 		AudioQueueBufferRef fillBuf = myData->audioQueueBuffer[myData->fillBufferIndex];

@@ -13,6 +13,8 @@
 @interface ChaineFMSecondViewController: UIViewController <UITableViewDelegate> {
     NSArray *colorsArray;
     IBOutlet UILabel *titleText;
+    
+    IBOutlet UILabel *guestText;
 }
 @property (weak, nonatomic) IBOutlet UITableView *colorsTable;
 @end

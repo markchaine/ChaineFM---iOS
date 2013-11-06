@@ -21,10 +21,10 @@
 {
     [super viewDidLoad];
 
+    {
     
-    
-    titleText.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
-    
+    titleText.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:22];
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -67,7 +67,10 @@
     PFObject *tempObject = [colorsArray objectAtIndex:indexPath.row];
     
     cell.cellTitle.text = [tempObject objectForKey:@"GuestInformation"];
+    cell.cellTitle.font = [UIFont fontWithName:@"SignikaNegative-Regular"  size:15];
     cell.guestInfo.text = [NSString stringWithFormat:@"In The Studio at, %@", [tempObject objectForKey:@"GuestTime"]];
+    cell.guestInfo.font = [UIFont fontWithName:@"SignikaNegative-Regular"  size:14];
+
 
     return cell;
 }
