@@ -97,11 +97,137 @@ OSStatus MyEnqueueBuffer(MyData* myData)
 	return err;
 }
 
+-(void)songInfoUpdate:(NSTimer *)timer {
+    
+    
+    // Set Show information
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+    [query getObjectInBackgroundWithId:@"O7qMNAWaJh" block:^(PFObject *songText, NSError *error)
+     
+     
+     {
+         // Do something with the returned PFObject in the gameScore variable.
+         NSLog(@"%@", songText);
+         
+         
+         
+         songTitle.text = [songText objectForKey:@"TextValue"];
+         songTitle.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
+     }];
+    
+    Class playingInfoCenter = NSClassFromString(@"MPNowPlayingInfoCenter");
+    
+    if (playingInfoCenter) {
+        
+        
+        NSMutableDictionary *songInfo = [[NSMutableDictionary alloc] init];
+        
+        NSString *ShowInfoTitle;
+        NSString *ShowInfoPresenter;
+        NSString *ShowInfoSong;
+        
+        ShowInfoTitle = ShowTitle.text;
+        ShowInfoPresenter = PresenterName.text;
+        ShowInfoSong = songTitle.text;
+        
+        
+        
+        
+        [songInfo setObject:ShowInfoSong forKey:MPMediaItemPropertyTitle];
+        [songInfo setObject:ShowInfoPresenter forKey:MPMediaItemPropertyArtist];
+        [songInfo setObject:ShowInfoTitle forKey:MPMediaItemPropertyAlbumTitle];
+        
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songInfo];
+        
+        
+    }
+
+
+
+    
+}
+
+-(void)myTimerTick:(NSTimer *)timer
+{
+    
+    {
+        // Set Show information
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+        [query getObjectInBackgroundWithId:@"ZyFiRteUhF" block:^(PFObject *showText, NSError *error)
+         
+         
+         {
+             // Do something with the returned PFObject in the gameScore variable.
+             NSLog(@"%@", showText);
+             
+             
+             
+             ShowTitle.text = [showText objectForKey:@"TextValue"];
+             ShowTitle.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
+             [showText refresh];
+         }];
+        
+        
+        
+    }
+    
+    {
+        
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+        [query getObjectInBackgroundWithId:@"3IMYg8RCr8" block:^(PFObject *djText, NSError *error)
+         
+         
+         {
+             // Do something with the returned PFObject in the gameScore variable.
+             NSLog(@"%@", djText);
+             
+             
+             
+             // Set Presenter Information
+             PresenterName.text = [NSString stringWithFormat:@"with %@",[djText objectForKey:@"TextValue"]];
+             PresenterName.font = [UIFont fontWithName:@"SignikaNegative-Regular" size:14];
+             
+                 [djText refresh];
+             
+         }];
+    }
+    
+    {
+        // Set Show Information
+        // mGTySi5af4
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+        [query getObjectInBackgroundWithId:@"mGTySi5af4" block:^(PFObject *rshowText, NSError *error)
+         
+         
+         {
+             // Do something with the returned PFObject in the gameScore variable.
+             NSLog(@"%@", rshowText);
+             
+             
+             
+             ShowInformation.text = [rshowText objectForKey:@"TextValue"];
+             ShowInformation.textAlignment = NSTextAlignmentCenter;
+             ShowInformation.font = [UIFont fontWithName:@"SignikaNegative-Regular" size:11];
+             ShowInformation.numberOfLines = 0;
+                 [rshowText refresh];
+         }];
+    }
+}
+
+    
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [NSTimer scheduledTimerWithTimeInterval:1200 target:self selector:@selector(myTimerTick:) userInfo:nil repeats:YES]; // the interval is in seconds...
     
+    [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(songInfoUpdate:) userInfo:nil repeats:YES]; // the interval is in seconds...
+
     
     MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(59,226,219,49)];
     [self.view addSubview:volumeView];
@@ -179,6 +305,22 @@ OSStatus MyEnqueueBuffer(MyData* myData)
              ShowInformation.font = [UIFont fontWithName:@"SignikaNegative-Regular" size:11];
              ShowInformation.numberOfLines = 0;
          }];
+        
+        PFQuery *newquery = [PFQuery queryWithClassName:@"AppText"];
+        [newquery getObjectInBackgroundWithId:@"O7qMNAWaJh" block:^(PFObject *songText, NSError *error)
+         
+         
+         {
+             // Do something with the returned PFObject in the gameScore variable.
+             NSLog(@"%@", songText);
+             
+             
+             
+             songTitle.text = [songText objectForKey:@"TextValue"];
+             songTitle.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
+             [songText refresh];
+         }];
+
     }
 }
 
@@ -452,16 +594,18 @@ void MyPacketsProc(void *							inClientData,
         
         NSString *ShowInfoTitle;
         NSString *ShowInfoPresenter;
+        NSString *ShowInfoSong;
         
         ShowInfoTitle = ShowTitle.text;
         ShowInfoPresenter = PresenterName.text;
+        ShowInfoSong = songTitle.text;
 
 
 
         
-        [songInfo setObject:ShowInfoTitle forKey:MPMediaItemPropertyTitle];
+        [songInfo setObject:ShowInfoSong forKey:MPMediaItemPropertyTitle];
         [songInfo setObject:ShowInfoPresenter forKey:MPMediaItemPropertyArtist];
-        [songInfo setObject:@"Chaine FM 106.3FM" forKey:MPMediaItemPropertyAlbumTitle];
+        [songInfo setObject:ShowInfoTitle forKey:MPMediaItemPropertyAlbumTitle];
 
         [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songInfo];
         

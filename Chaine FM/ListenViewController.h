@@ -65,6 +65,7 @@ typedef struct MyData MyData;
     IBOutlet UILabel *ShowInformation;
     IBOutlet UILabel *PresenterName;
 
+    IBOutlet UILabel *songTitle;
     IBOutlet UIButton *ResumeRButton;
 
 }

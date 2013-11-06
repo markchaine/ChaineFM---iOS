@@ -84,7 +84,6 @@
         <!--ChaineFM Contact View Controller - Item-->
         <scene sceneID="tLn-yU-udg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N1e-wQ-dK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ZF1-l1-HKk" customClass="ChaineFMContactViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mjR-A3-iAD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -123,6 +122,7 @@
                         <outlet property="webview" destination="usX-V7-TgJ" id="r7o-3l-pdg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1e-wQ-dK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1046" y="-147"/>
         </scene>
@@ -404,6 +404,13 @@
                                     <action selector="ResumeRadio:" destination="R1C-tw-GuZ" eventType="touchUpInside" id="pGS-W6-X6O"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now playing... Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ueV-Id-3jU">
+                                <rect key="frame" x="4" y="104" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0039215688589999999" green="0.56862747670000002" blue="0.66274511810000003" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -417,6 +424,7 @@
                         <outlet property="pause2" destination="jIC-U5-bdN" id="Smh-tl-Jig"/>
                         <outlet property="playPauseButton" destination="8DM-2L-mnu" id="plL-wq-CEd"/>
                         <outlet property="playPauseButton2" destination="na2-v7-bJi" id="msc-cA-ZeR"/>
+                        <outlet property="songTitle" destination="ueV-Id-3jU" id="acA-PM-d1z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5w3-bk-fH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -462,12 +470,26 @@
     </scenes>
     <resources>
         <image name="background.png" width="640" height="910"/>
+        <image name="background.png" width="640" height="910"/>
+        <image name="background.png" width="640" height="910"/>
+        <image name="background.png" width="640" height="910"/>
+        <image name="background.png" width="640" height="910"/>
         <image name="bottombar.png" width="637" height="70"/>
         <image name="home-content.png" width="571" height="833"/>
+        <image name="home-content.png" width="571" height="833"/>
+        <image name="home-content.png" width="571" height="833"/>
+        <image name="home-content.png" width="571" height="833"/>
+        <image name="home-content.png" width="571" height="833"/>
         <image name="pause.png" width="500" height="500"/>
+        <image name="pause.png" width="500" height="500"/>
+        <image name="play.png" width="60" height="67"/>
         <image name="play.png" width="60" height="67"/>
         <image name="playerplaceholder.png" width="632" height="390"/>
         <image name="second" width="30" height="30"/>
+        <image name="titlebar.png" width="640" height="88"/>
+        <image name="titlebar.png" width="640" height="88"/>
+        <image name="titlebar.png" width="640" height="88"/>
+        <image name="titlebar.png" width="640" height="88"/>
         <image name="titlebar.png" width="640" height="88"/>
         <image name="volume.png" width="62" height="52"/>
     </resources>

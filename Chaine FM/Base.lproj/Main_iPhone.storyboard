@@ -234,7 +234,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="home-content.png" id="zQU-ti-AdD">
-                                <rect key="frame" x="17" y="88" width="285" height="392"/>
+                                <rect key="frame" x="0.0" y="93" width="285" height="392"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guest's in the Studio Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lCU-Vg-aCn">
@@ -412,6 +412,13 @@
                                     <action selector="ResumeRadio:" destination="R1C-tw-GuZ" eventType="touchUpInside" id="pGS-W6-X6O"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now playing... Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wc5-Ol-3cv">
+                                <rect key="frame" x="4" y="104" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0039215688593685627" green="0.56862747669219971" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -425,6 +432,7 @@
                         <outlet property="pause2" destination="jIC-U5-bdN" id="Smh-tl-Jig"/>
                         <outlet property="playPauseButton" destination="8DM-2L-mnu" id="plL-wq-CEd"/>
                         <outlet property="playPauseButton2" destination="na2-v7-bJi" id="msc-cA-ZeR"/>
+                        <outlet property="songTitle" destination="Wc5-Ol-3cv" id="w0x-LA-T9z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5w3-bk-fH1" userLabel="First Responder" sceneMemberID="firstResponder"/>

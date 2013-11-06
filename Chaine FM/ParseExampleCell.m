@@ -1,11 +1,10 @@
 //
 //  ParseExampleCell.m
-//  ParseExample
+//  Chaine FM
 //
-//  Created by Nick Barrowclough on 3/7/13.
-//  Copyright (c) 2013 Nicholas Barrowclough. All rights reserved.
+//  Created by Mark McWhirter on 06/10/2013.
+//  Copyright (c) 2013 Larne Community Media. All rights reserved.
 //
-
 #import "ParseExampleCell.h"
 
 @implementation ParseExampleCell

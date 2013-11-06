@@ -50,7 +50,6 @@
 		417320AD18009C4C0035E488 /* Chaine_FMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417320AC18009C4C0035E488 /* Chaine_FMTests.m */; };
 		417320EF1801AB170035E488 /* titlebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 417320E91801AB170035E488 /* titlebar.png */; };
 		418CF8451809584C00884A21 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418CF8441809584C00884A21 /* MessageUI.framework */; };
-		418CF84A18098CC300884A21 /* abstract-background-bokeh-colour-cartoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 418CF84918098CC300884A21 /* abstract-background-bokeh-colour-cartoon.jpg */; };
 		418CF84E180A069400884A21 /* social-icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 418CF84D180A069400884A21 /* social-icon@2.png */; };
 		418CF850180A07EA00884A21 /* social-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 418CF84F180A07EA00884A21 /* social-icon.png */; };
 		418CF852180A0BAC00884A21 /* Swipe Gesture.png in Resources */ = {isa = PBXBuildFile; fileRef = 418CF851180A0BAC00884A21 /* Swipe Gesture.png */; };
@@ -149,7 +148,6 @@
 		417320AC18009C4C0035E488 /* Chaine_FMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chaine_FMTests.m; sourceTree = "<group>"; };
 		417320E91801AB170035E488 /* titlebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar.png; sourceTree = "<group>"; };
 		418CF8441809584C00884A21 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		418CF84918098CC300884A21 /* abstract-background-bokeh-colour-cartoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "abstract-background-bokeh-colour-cartoon.jpg"; path = "../../../../presenterImage/abstract-background-bokeh-colour-cartoon.jpg"; sourceTree = "<group>"; };
 		418CF84D180A069400884A21 /* social-icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon@2.png"; sourceTree = "<group>"; };
 		418CF84F180A07EA00884A21 /* social-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon.png"; sourceTree = "<group>"; };
 		418CF851180A0BAC00884A21 /* Swipe Gesture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Swipe Gesture.png"; sourceTree = "<group>"; };
@@ -309,7 +307,6 @@
 				4173208318009C4C0035E488 /* ChaineFM-Info.plist */,
 				418CF851180A0BAC00884A21 /* Swipe Gesture.png */,
 				418CF84F180A07EA00884A21 /* social-icon.png */,
-				418CF84918098CC300884A21 /* abstract-background-bokeh-colour-cartoon.jpg */,
 				41108ACA180205D7001A364C /* volume.png */,
 				41108AC818020288001A364C /* play.png */,
 				41108AC61802027D001A364C /* bottombar.png */,
@@ -460,7 +457,6 @@
 				41AB49AF1801D6E200DCFB24 /* SignikaNegative-Semibold.ttf in Resources */,
 				4173208F18009C4C0035E488 /* Main_iPhone.storyboard in Resources */,
 				41108AC51802019F001A364C /* playerplaceholder.png in Resources */,
-				418CF84A18098CC300884A21 /* abstract-background-bokeh-colour-cartoon.jpg in Resources */,
 				418CF84E180A069400884A21 /* social-icon@2.png in Resources */,
 				41AB49AE1801D6E200DCFB24 /* SignikaNegative-Regular.ttf in Resources */,
 				41E19F921812A75300EA71CD /* Main_iPhoneS.storyboard in Resources */,
@@ -653,8 +649,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Larne Community Media Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Larne Community Media Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark McWhirter (S4SW8ZSN27)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark McWhirter (S4SW8ZSN27)";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,8 +673,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Larne Community Media Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Larne Community Media Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark McWhirter (S4SW8ZSN27)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark McWhirter (S4SW8ZSN27)";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
