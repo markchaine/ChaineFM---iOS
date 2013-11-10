@@ -35,10 +35,12 @@
 }
 - (void) retrieveFromParse {
 
- 
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd-MM-yy"];
     
-    
+    NSString *resultString = [formatter stringFromDate:[NSDate date]];
     PFQuery *retrieveColors = [PFQuery queryWithClassName:@"Guests"];
+    [retrieveColors whereKey:@"GuestDate" equalTo:resultString];
     
     // If no objects are loaded in memory, we look to the cache first to fill the table
     // and then subsequently do a query against the network.

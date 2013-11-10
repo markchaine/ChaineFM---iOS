@@ -470,26 +470,12 @@
     </scenes>
     <resources>
         <image name="background.png" width="640" height="910"/>
-        <image name="background.png" width="640" height="910"/>
-        <image name="background.png" width="640" height="910"/>
-        <image name="background.png" width="640" height="910"/>
-        <image name="background.png" width="640" height="910"/>
         <image name="bottombar.png" width="637" height="70"/>
         <image name="home-content.png" width="571" height="833"/>
-        <image name="home-content.png" width="571" height="833"/>
-        <image name="home-content.png" width="571" height="833"/>
-        <image name="home-content.png" width="571" height="833"/>
-        <image name="home-content.png" width="571" height="833"/>
         <image name="pause.png" width="500" height="500"/>
-        <image name="pause.png" width="500" height="500"/>
-        <image name="play.png" width="60" height="67"/>
         <image name="play.png" width="60" height="67"/>
         <image name="playerplaceholder.png" width="632" height="390"/>
         <image name="second" width="30" height="30"/>
-        <image name="titlebar.png" width="640" height="88"/>
-        <image name="titlebar.png" width="640" height="88"/>
-        <image name="titlebar.png" width="640" height="88"/>
-        <image name="titlebar.png" width="640" height="88"/>
         <image name="titlebar.png" width="640" height="88"/>
         <image name="volume.png" width="62" height="52"/>
     </resources>

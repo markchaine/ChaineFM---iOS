@@ -234,7 +234,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="home-content.png" id="zQU-ti-AdD">
-                                <rect key="frame" x="0.0" y="93" width="285" height="392"/>
+                                <rect key="frame" x="20" y="95" width="285" height="392"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guest's in the Studio Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lCU-Vg-aCn">
@@ -245,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="22" sectionFooterHeight="22" id="KZm-eH-zDO">
-                                <rect key="frame" x="28" y="147" width="262" height="323"/>
+                                <rect key="frame" x="29" y="147" width="262" height="323"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -419,6 +419,13 @@
                                 <color key="textColor" red="0.0039215688593685627" green="0.56862747669219971" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sBL-pj-mjF">
+                                <rect key="frame" x="-35" y="493" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -433,6 +440,7 @@
                         <outlet property="playPauseButton" destination="8DM-2L-mnu" id="plL-wq-CEd"/>
                         <outlet property="playPauseButton2" destination="na2-v7-bJi" id="msc-cA-ZeR"/>
                         <outlet property="songTitle" destination="Wc5-Ol-3cv" id="w0x-LA-T9z"/>
+                        <outlet property="streamlabel" destination="sBL-pj-mjF" id="rG2-ns-5IH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5w3-bk-fH1" userLabel="First Responder" sceneMemberID="firstResponder"/>

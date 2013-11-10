@@ -24,7 +24,7 @@
 #define kNumAQBufs 3		// number of audio queue buffers we allocate
 #define kAQBufSize  128*1024		// number of bytes in each audio queue buffer
 #define kAQMaxPacketDescs 512		// number of packet descriptions in our array
-
+extern NSValue *streamingadd;
 struct MyData
 {
 	AudioFileStreamID audioFileStream;	// the audio file stream parser
@@ -65,6 +65,7 @@ typedef struct MyData MyData;
     IBOutlet UILabel *ShowInformation;
     IBOutlet UILabel *PresenterName;
 
+    IBOutlet UILabel *streamlabel;
     IBOutlet UILabel *songTitle;
     IBOutlet UIButton *ResumeRButton;
 
