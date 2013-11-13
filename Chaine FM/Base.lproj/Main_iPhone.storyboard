@@ -419,13 +419,6 @@
                                 <color key="textColor" red="0.0039215688593685627" green="0.56862747669219971" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sBL-pj-mjF">
-                                <rect key="frame" x="-35" y="493" width="289" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -440,7 +433,6 @@
                         <outlet property="playPauseButton" destination="8DM-2L-mnu" id="plL-wq-CEd"/>
                         <outlet property="playPauseButton2" destination="na2-v7-bJi" id="msc-cA-ZeR"/>
                         <outlet property="songTitle" destination="Wc5-Ol-3cv" id="w0x-LA-T9z"/>
-                        <outlet property="streamlabel" destination="sBL-pj-mjF" id="rG2-ns-5IH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5w3-bk-fH1" userLabel="First Responder" sceneMemberID="firstResponder"/>

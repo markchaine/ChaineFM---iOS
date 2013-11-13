@@ -272,6 +272,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.92941182851791382" green="0.92941182851791382" blue="0.92941182851791382" alpha="1" colorSpace="deviceRGB"/>
                                         <connections>
                                             <outlet property="cellTitle" destination="vHo-eo-3Q1" id="GTO-Fs-GEy"/>
                                             <outlet property="guestInfo" destination="R6u-AK-zu2" id="WzP-0h-2Zs"/>

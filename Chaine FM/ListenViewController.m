@@ -18,7 +18,7 @@
 
 
 @end
-#define RADIO_LOCATION "http://stream.chainefm.com:8004"  // set your "http://IP_ADDRESS:PORT"
+#define RADIO_LOCATION "http://radio.canstream.co.uk:8507/live.mp3"  // set your "http://IP_ADDRESS:PORT"
 
 //#define PRINTERROR(LABEL)	printf("%s err %4.4s %d\n", LABEL, &err, err)
 #define PRINTERROR(LABEL)	printf("%s err %4.4s %d\n", LABEL, (char*)&err, (int)err)
