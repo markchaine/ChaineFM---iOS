@@ -81,51 +81,71 @@
     }
     
     
+    PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+    [query getObjectInBackgroundWithId:@"ljTcF2Gjku" block:^(PFObject *status, NSError *error)
+     {
+     
+         // Assign tab bar item with titles
+         UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+         UITabBar *tabBar = tabBarController.tabBar;
+         UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+         UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+         UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+         UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+         UITabBarItem *tabBarItem5 = [tabBar.items objectAtIndex:4];
+         
+         
+         
+         tabBarItem1.title = @"";
+         tabBarItem2.title = @"";
+         tabBarItem3.title = @"";
+         tabBarItem4.title = @"";
+         tabBarItem5.title = @"";
+         
+         
+         
+         tabBarItem1.image = [UIImage imageNamed:@"home.png"];
+         
+         tabBarItem2.image = [UIImage imageNamed:@"content.png"];
+         
+         tabBarItem3.image = [UIImage imageNamed:@"contact.png"];
+         
+         
+         tabBarItem4.image = [UIImage imageNamed:@"listen.png"];
+         
+         tabBarItem5.image = [UIImage imageNamed:@"social-icon.png"];
+         
+         tabBarItem1.selectedImage = [UIImage imageNamed:@"home-selected.png"];
+         
+         tabBarItem2.selectedImage = [UIImage imageNamed:@"content-selected.png"];
+         
+         tabBarItem3.selectedImage = [UIImage imageNamed:@"contact-selected.png"];
+         
+         tabBarItem4.selectedImage = [UIImage imageNamed:@"listen-selected.png"];
+         
+         tabBarItem5.selectedImage = [UIImage imageNamed:@"social-icon.png"];
+         
+         UIImage* tabBarBackground = [UIImage imageNamed:@"tab-back.png"];
+         [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+         [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected.png"]];
+
+     
+     
+     NSString *activetext = [NSString stringWithFormat:@"%@", [status objectForKey:@"TextValue"]];
+     
+     
+
+         if([activetext isEqualToString:@"true"]){
+             NSLog(@"The Station is live");
+         } else {
+             NSLog(@"The Station is off-air");
+             tabBarItem2.enabled = false;
+             tabBarItem4.enabled = false;
+             
+         }
     
-    // Assign tab bar item with titles
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UITabBar *tabBar = tabBarController.tabBar;
-    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
-    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
-    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
-    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
-    UITabBarItem *tabBarItem5 = [tabBar.items objectAtIndex:4];
-    
-    
-    tabBarItem1.title = @"";
-    tabBarItem2.title = @"";
-    tabBarItem3.title = @"";
-    tabBarItem4.title = @"";
-    tabBarItem5.title = @"";
-    
-    
-    
-    tabBarItem1.image = [UIImage imageNamed:@"home.png"];
-    
-    tabBarItem2.image = [UIImage imageNamed:@"content.png"];
-    
-    tabBarItem3.image = [UIImage imageNamed:@"contact.png"];
-    
-    
-    tabBarItem4.image = [UIImage imageNamed:@"listen.png"];
-    
-    tabBarItem5.image = [UIImage imageNamed:@"social-icon.png"];
-    
-    tabBarItem1.selectedImage = [UIImage imageNamed:@"home-selected.png"];
-    
-    tabBarItem2.selectedImage = [UIImage imageNamed:@"content-selected.png"];
-    
-    tabBarItem3.selectedImage = [UIImage imageNamed:@"contact-selected.png"];
-    
-    tabBarItem4.selectedImage = [UIImage imageNamed:@"listen-selected.png"];
-    
-    tabBarItem5.selectedImage = [UIImage imageNamed:@"social-icon.png"];
-    
-    UIImage* tabBarBackground = [UIImage imageNamed:@"tab-back.png"];
-    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
-    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected.png"]];
-    
-    
+       
+     }];
 
     
     

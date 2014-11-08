@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8YX-ce-x5E">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--ChaineFM First View Controller - First-->
+        <!--First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
                 <viewController title="First" id="CZ4-MO-1fc" customClass="ChaineFMFirstViewController" sceneMemberID="viewController">
@@ -43,14 +43,26 @@
                                 <rect key="frame" x="20" y="138" width="280" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6pB-Y0-x2E">
+                                <rect key="frame" x="20" y="138" width="280" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imagebuttonclick:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="tmF-g3-JQi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="hometext" destination="2Iu-vR-ii4" id="Y8T-BL-xPm"/>
+                        <outlet property="imagebutton" destination="6pB-Y0-x2E" id="cMi-Zi-ys8"/>
                         <outlet property="label" destination="k5Y-Na-nXm" id="5ls-s8-Qdd"/>
                         <outlet property="yourImage" destination="bUa-Pp-b7o" id="SZt-h6-QnB"/>
+                        <segue destination="VC7-db-4fn" kind="modal" identifier="moreinfo" modalTransitionStyle="coverVertical" id="fRP-u1-1GU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
@@ -80,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-935"/>
         </scene>
-        <!--ChaineFM Contact View Controller - Item-->
+        <!--Item-->
         <scene sceneID="tLn-yU-udg">
             <objects>
                 <viewController id="ZF1-l1-HKk" customClass="ChaineFMContactViewController" sceneMemberID="viewController">
@@ -125,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-147"/>
         </scene>
-        <!--Presenters View Controller - Item-->
+        <!--Item-->
         <scene sceneID="8dc-sA-7wy">
             <objects>
                 <viewController id="hQB-IJ-Lgq" customClass="PresentersViewController" sceneMemberID="viewController">
@@ -217,7 +229,69 @@
             </objects>
             <point key="canvasLocation" x="1482" y="169"/>
         </scene>
-        <!--ChaineFM Second View Controller - Second-->
+        <!--ChaineFM Button Info View Controller-->
+        <scene sceneID="bDy-wl-M4a">
+            <objects>
+                <viewController id="VC7-db-4fn" customClass="ChaineFMButtonInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFZ-Nr-Aps">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="7Ri-aF-di6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlebar.png" id="7iB-9t-EQs">
+                                        <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="W3L-Jf-7Yp">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-content.png" id="fsS-vs-twa">
+                                        <rect key="frame" x="17" y="78" width="286" height="410"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="JE1-nK-t0I">
+                                        <rect key="frame" x="26" y="92" width="270" height="387"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <webView contentMode="scaleToFill" id="IGl-er-Xou">
+                                        <rect key="frame" x="26" y="92" width="270" height="387"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </webView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o2Z-Ab-pnA">
+                                        <rect key="frame" x="0.0" y="530" width="320" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Finished / Close Window">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeView:" destination="VC7-db-4fn" eventType="touchUpInside" id="OD3-qP-bFQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="infotextView" destination="JE1-nK-t0I" id="bYG-Gf-JX8"/>
+                        <outlet property="webViewer" destination="IGl-er-Xou" id="j6M-Au-ube"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eec-ia-bQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="993"/>
+        </scene>
+        <!--Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
                 <viewController title="Second" id="QUy-BD-bpt" customClass="ChaineFMSecondViewController" sceneMemberID="viewController">
@@ -296,7 +370,7 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Listen View Controller - Item-->
+        <!--Item-->
         <scene sceneID="euH-AZ-tr9">
             <objects>
                 <viewController id="R1C-tw-GuZ" customClass="ListenViewController" sceneMemberID="viewController">
@@ -464,6 +538,7 @@
         <!--View Controller-->
         <scene sceneID="nf8-i6-vsS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgo-5v-UPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="rgv-2b-e7d" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mgY-kH-iZk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -472,7 +547,6 @@
                     </view>
                     <toolbarItems/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kgo-5v-UPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
@@ -487,10 +561,10 @@
         <image name="titlebar.png" width="640" height="88"/>
         <image name="volume.png" width="62" height="52"/>
     </resources>
-    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

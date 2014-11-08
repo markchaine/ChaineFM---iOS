@@ -13,7 +13,6 @@
 		41108AC71802027D001A364C /* bottombar.png in Resources */ = {isa = PBXBuildFile; fileRef = 41108AC61802027D001A364C /* bottombar.png */; };
 		41108AC918020288001A364C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 41108AC818020288001A364C /* play.png */; };
 		41108ACB180205D7001A364C /* volume.png in Resources */ = {isa = PBXBuildFile; fileRef = 41108ACA180205D7001A364C /* volume.png */; };
-		41108AD81802D396001A364C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41108AD71802D396001A364C /* Parse.framework */; };
 		41108ADA1802D3F4001A364C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41108AD91802D3F4001A364C /* AudioToolbox.framework */; };
 		41108ADC1802D3FC001A364C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41108ADB1802D3FC001A364C /* CFNetwork.framework */; };
 		41108ADE1802D410001A364C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41108ADD1802D410001A364C /* CoreLocation.framework */; };
@@ -32,7 +31,11 @@
 		4145F978180AADB000B8514D /* Arrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4145F977180AADB000B8514D /* Arrow2.png */; };
 		4145F97A180AADE200B8514D /* homecontain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4145F979180AADE200B8514D /* homecontain.png */; };
 		4145F97C180ACC5400B8514D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4145F97B180ACC5400B8514D /* AVFoundation.framework */; };
-		415212B9180C8D4100346710 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 415212B8180C8D4100346710 /* pause.png */; };
+		415563A91A0E1CC300356317 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415563A51A0E1CC300356317 /* Bolts.framework */; };
+		415563AA1A0E1CC300356317 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415563A61A0E1CC300356317 /* Parse.framework */; };
+		415563AB1A0E1CC300356317 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415563A71A0E1CC300356317 /* ParseFacebookUtils.framework */; };
+		415563AC1A0E1CC300356317 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415563A81A0E1CC300356317 /* ParseUI.framework */; };
+		415563AF1A0E42B900356317 /* ChaineFMButtonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415563AE1A0E42B900356317 /* ChaineFMButtonInfoViewController.m */; };
 		4173207C18009C4C0035E488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4173207B18009C4C0035E488 /* Foundation.framework */; };
 		4173207E18009C4C0035E488 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4173207D18009C4C0035E488 /* CoreGraphics.framework */; };
 		4173208018009C4C0035E488 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4173207F18009C4C0035E488 /* UIKit.framework */; };
@@ -102,7 +105,6 @@
 		41108AC61802027D001A364C /* bottombar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottombar.png; sourceTree = "<group>"; };
 		41108AC818020288001A364C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		41108ACA180205D7001A364C /* volume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume.png; sourceTree = "<group>"; };
-		41108AD71802D396001A364C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		41108AD91802D3F4001A364C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		41108ADB1802D3FC001A364C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		41108ADD1802D410001A364C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -124,7 +126,12 @@
 		4145F977180AADB000B8514D /* Arrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow2.png; sourceTree = "<group>"; };
 		4145F979180AADE200B8514D /* homecontain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homecontain.png; sourceTree = "<group>"; };
 		4145F97B180ACC5400B8514D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		415212B8180C8D4100346710 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../../../../pause.png; sourceTree = "<group>"; };
+		415563A51A0E1CC300356317 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		415563A61A0E1CC300356317 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		415563A71A0E1CC300356317 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		415563A81A0E1CC300356317 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		415563AD1A0E42B900356317 /* ChaineFMButtonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaineFMButtonInfoViewController.h; sourceTree = "<group>"; };
+		415563AE1A0E42B900356317 /* ChaineFMButtonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaineFMButtonInfoViewController.m; sourceTree = "<group>"; };
 		4173207818009C4C0035E488 /* ChaineFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaineFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4173207B18009C4C0035E488 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4173207D18009C4C0035E488 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,20 +197,23 @@
 			files = (
 				412DAD62180AFB4200E62058 /* MediaPlayer.framework in Frameworks */,
 				412DAD60180AFB3B00E62058 /* CoreAudio.framework in Frameworks */,
+				415563AC1A0E1CC300356317 /* ParseUI.framework in Frameworks */,
 				4145F97C180ACC5400B8514D /* AVFoundation.framework in Frameworks */,
 				418CF8451809584C00884A21 /* MessageUI.framework in Frameworks */,
 				41108AEA1802D447001A364C /* SystemConfiguration.framework in Frameworks */,
+				415563AB1A0E1CC300356317 /* ParseFacebookUtils.framework in Frameworks */,
 				41108AE81802D43E001A364C /* StoreKit.framework in Frameworks */,
 				41108AE61802D436001A364C /* Security.framework in Frameworks */,
 				41108AE41802D42E001A364C /* QuartzCore.framework in Frameworks */,
 				41108AE21802D425001A364C /* MobileCoreServices.framework in Frameworks */,
 				41108AE01802D41A001A364C /* libz.1.1.3.dylib in Frameworks */,
+				415563AA1A0E1CC300356317 /* Parse.framework in Frameworks */,
 				41108ADE1802D410001A364C /* CoreLocation.framework in Frameworks */,
 				4173207E18009C4C0035E488 /* CoreGraphics.framework in Frameworks */,
+				415563A91A0E1CC300356317 /* Bolts.framework in Frameworks */,
 				41108ADC1802D3FC001A364C /* CFNetwork.framework in Frameworks */,
 				41108ADA1802D3F4001A364C /* AudioToolbox.framework in Frameworks */,
 				4173208018009C4C0035E488 /* UIKit.framework in Frameworks */,
-				41108AD81802D396001A364C /* Parse.framework in Frameworks */,
 				4173207C18009C4C0035E488 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +253,10 @@
 		4173207A18009C4C0035E488 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				415563A51A0E1CC300356317 /* Bolts.framework */,
+				415563A61A0E1CC300356317 /* Parse.framework */,
+				415563A71A0E1CC300356317 /* ParseFacebookUtils.framework */,
+				415563A81A0E1CC300356317 /* ParseUI.framework */,
 				412DAD61180AFB4200E62058 /* MediaPlayer.framework */,
 				412DAD5F180AFB3B00E62058 /* CoreAudio.framework */,
 				4145F97B180ACC5400B8514D /* AVFoundation.framework */,
@@ -256,7 +270,6 @@
 				41108ADD1802D410001A364C /* CoreLocation.framework */,
 				41108ADB1802D3FC001A364C /* CFNetwork.framework */,
 				41108AD91802D3F4001A364C /* AudioToolbox.framework */,
-				41108AD71802D396001A364C /* Parse.framework */,
 				4173207B18009C4C0035E488 /* Foundation.framework */,
 				4173207D18009C4C0035E488 /* CoreGraphics.framework */,
 				4173207F18009C4C0035E488 /* UIKit.framework */,
@@ -270,12 +283,13 @@
 			children = (
 				4173208A18009C4C0035E488 /* ChaineFMAppDelegate.h */,
 				4173208B18009C4C0035E488 /* ChaineFMAppDelegate.m */,
+				415563AD1A0E42B900356317 /* ChaineFMButtonInfoViewController.h */,
+				415563AE1A0E42B900356317 /* ChaineFMButtonInfoViewController.m */,
 				4173208D18009C4C0035E488 /* Main_iPhone.storyboard */,
 				41E19F901812A75300EA71CD /* Main_iPhoneS.storyboard */,
 				413B2B0F1807482100AD0B2C /* PresentersViewController.h */,
 				413B2B101807482100AD0B2C /* PresentersViewController.m */,
 				41108AC11801FB6A001A364C /* ListenViewController.h */,
-				415212B8180C8D4100346710 /* pause.png */,
 				41108AC21801FB78001A364C /* ListenViewController.m */,
 				41F974741808775800D05B0B /* ImageExampleCell.h */,
 				41F974751808775800D05B0B /* ImageExampleCell.m */,
@@ -407,11 +421,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ChaineFM;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Larne Community Media";
 				TargetAttributes = {
 					4173207718009C4C0035E488 = {
-						DevelopmentTeam = H7M266N9FJ;
+						DevelopmentTeam = K4Q5DFPBFZ;
 					};
 					4173209E18009C4C0035E488 = {
 						TestTargetID = 4173207718009C4C0035E488;
@@ -475,7 +489,6 @@
 				41AB49821801CBE100DCFB24 /* home.png in Resources */,
 				41108AC71802027D001A364C /* bottombar.png in Resources */,
 				41108AC918020288001A364C /* play.png in Resources */,
-				415212B9180C8D4100346710 /* pause.png in Resources */,
 				41AB49861801CBE100DCFB24 /* listen@2x.png in Resources */,
 				41AB497C1801CBE100DCFB24 /* contact.png in Resources */,
 				41AB49AD1801D6E200DCFB24 /* SignikaNegative-Light.ttf in Resources */,
@@ -508,6 +521,7 @@
 				4173209518009C4C0035E488 /* ChaineFMFirstViewController.m in Sources */,
 				413B2B0E18072D8A00AD0B2C /* ParseExampleCell.m in Sources */,
 				41108AC31801FC8A001A364C /* ListenViewController.m in Sources */,
+				415563AF1A0E42B900356317 /* ChaineFMButtonInfoViewController.m in Sources */,
 				4173209818009C4C0035E488 /* ChaineFMSecondViewController.m in Sources */,
 				41108ABF1801FA3C001A364C /* ViewController.m in Sources */,
 				41F974761808775800D05B0B /* ImageExampleCell.m in Sources */,
@@ -573,7 +587,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -613,7 +626,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -649,12 +661,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Larne Community Media Ltd (H7M266N9FJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Larne Community Media Ltd (H7M266N9FJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/markmcwhirter/Desktop/ChaineFM/2013\\ App/Chaine\\ FM",
+					/Users/markmcwhirter/Desktop/ChaineFM/2013,
+					App/Chaine,
+					FM,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chaine FM/ChaineFM-Prefix.pch";
@@ -673,12 +688,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Larne Community Media Ltd (H7M266N9FJ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Larne Community Media Ltd (H7M266N9FJ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/markmcwhirter/Desktop/ChaineFM/2013\\ App/Chaine\\ FM",
+					/Users/markmcwhirter/Desktop/ChaineFM/2013,
+					App/Chaine,
+					FM,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chaine FM/ChaineFM-Prefix.pch";
@@ -694,7 +712,6 @@
 		417320B418009C4C0035E488 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chaine FM.app/Chaine FM";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -717,7 +734,6 @@
 		417320B518009C4C0035E488 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chaine FM.app/Chaine FM";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

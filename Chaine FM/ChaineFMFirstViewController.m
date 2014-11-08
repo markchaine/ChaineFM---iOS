@@ -11,12 +11,31 @@
 
 
 @interface ChaineFMFirstViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *imagebutton;
 
 
 
 @end
 
 @implementation ChaineFMFirstViewController
+- (IBAction)imagebuttonclick:(id)sender {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"AppText"];
+    [query getObjectInBackgroundWithId:@"grZatWKPiw" block:^(PFObject *buttonstatus, NSError *error)
+     {
+         NSString *status = [buttonstatus valueForKey:@"TextValue"];
+         
+         if([status isEqualToString:@"true"]){
+             [self performSegueWithIdentifier:@"moreinfo" sender:self];
+         }
+         else
+         {
+             //Do nothing
+         }
+     }];
+    
+    
+}
 
 
 - (void)viewDidLoad

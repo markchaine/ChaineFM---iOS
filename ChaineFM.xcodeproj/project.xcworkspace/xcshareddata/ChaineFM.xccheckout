@@ -10,31 +10,31 @@
 	<string>ChaineFM</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EAE58A3F-470D-445E-A6FF-2DE0D385A059</key>
-		<string>https://github.com/markchaine/ChaineFM---iOS.git</string>
+		<key>3D5A27A144F5B773FC80D994935B89A6A55156C3</key>
+		<string>https://github.com/markconcept/ChaineFM---iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ChaineFM.xcodeproj/project.xcworkspace</string>
+	<string>ChaineFM.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EAE58A3F-470D-445E-A6FF-2DE0D385A059</key>
+		<key>3D5A27A144F5B773FC80D994935B89A6A55156C3</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/markchaine/ChaineFM---iOS.git</string>
+	<string>https://github.com/markconcept/ChaineFM---iOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EAE58A3F-470D-445E-A6FF-2DE0D385A059</string>
+	<string>3D5A27A144F5B773FC80D994935B89A6A55156C3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EAE58A3F-470D-445E-A6FF-2DE0D385A059</string>
+			<string>3D5A27A144F5B773FC80D994935B89A6A55156C3</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Chaine FM</string>
+			<string>ChaineFM---iOS</string>
 		</dict>
 	</array>
 </dict>
