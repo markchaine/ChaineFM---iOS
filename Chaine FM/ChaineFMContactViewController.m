@@ -33,7 +33,7 @@
     
     _titleLabel.font = [UIFont fontWithName:@"SignikaNegative-Bold"  size:20];
     
-    NSString *address = @"http://jam96.user.srcf.net/contact2";
+    NSString *address = @"http://m.chainefm.com/contact2.php";
     
     
     // Build the url and loadRequest
